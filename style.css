@@ -1,0 +1,116 @@
+:root{
+
+    --bg-color-light:#f0f0f0;
+    --text-color-light:#fff;
+    --bg-color-dark:#222;
+    --text-color-dark:#eee;
+    --primary-color:#0f8;
+}
+
+
+body{
+
+    margin: 0;
+    font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color-light);
+    color:var(--text-color-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
+    
+
+}
+
+body.dark-mode{
+
+    background-color: var(--bg-color-dark);
+    color:var(--text-color-dark);
+}
+
+.clock-container{
+
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.05);
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 0 20px var(--primary-color);
+        width: 320px;
+
+}
+
+.clock{
+
+    font-size: 64px;
+    font-weight: 700px;
+    margin-bottom: 10px;
+
+}
+
+.date{
+
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.controls button{
+
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--primary-color);
+    color:#fff;
+    transition:background-color 0.3s;
+
+}
+
+
+.controls button:hover{
+
+
+    background-color: #0c6;
+}
+
+.alarm-section{
+
+    margin-top: 16px;
+}
+
+.alarm-section input{
+
+    padding: 5px;
+    font-size: 16px;
+}
+
+.alarm-section button{
+
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    border: none;
+    background-color: var(--primary-color);
+    color:#fff;
+    
+}
+
+
+
+@media (max-width:480px) {
+
+    .clock {
+
+        font-size:2rem;
+    }
+
+    .controls {
+
+        flex-direction: column;
+    }
+    
+}

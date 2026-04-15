@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+        <div class="clock-container">
+            <div id="clock" class="clock"></div>
+                <div id="date" class="date"></div>
+
+
+                <div class="controls">
+                        <button id="toggleFormatBtn">Switch to 12-Hour</button>
+                        <button id="toggleThemeBtn">Toggle Dark/Light</button>
+                </div>
+
+                <div class="alarm-section">
+                    <h3>Set Alarm</h3>
+                    <input type="time"  id="alarmTime">
+                    <button id="setAlarmBtn">Set Alarm</button>
+                    <p id="alarmStatus"></p>
+                </div>
+        </div>
+
+
+        <audio id="alarmSound" src="alarm-mp3/digital-clockmp3.wav" preload="auto"></audio>
+        
+    <script src="script.js"></script>
+</body>
+</html>
